@@ -25,7 +25,7 @@ console.log(getDiv(105, 15));
 
 console.log('------------- # 5');
 
-function getNumbers(num) {
+function getIncreaseNums(num) {
   if (Number.isInteger(num) && num >= 1) {
     for (let i = 1; i <= num; i++) {
       console.log(i);
@@ -35,12 +35,25 @@ function getNumbers(num) {
   }
 }
 
-getNumbers(5);
-getNumbers(-5);
+getIncreaseNums(5);
+getIncreaseNums(-5);
 
 // =====================================================
 
 console.log('------------- # 6');
+
+function getDecreaseNums(num) {
+  if (Number.isInteger(num) && num >= 1) {
+    for (let i = num; i >= 1; i--) {
+      console.log(i);
+    }
+  } else {
+    console.log('Вводить нужно только целые положительные числа');
+  }
+}
+
+getDecreaseNums(5);
+getDecreaseNums(-5);
 
 // =====================================================
 

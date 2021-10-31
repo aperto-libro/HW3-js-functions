@@ -95,4 +95,4 @@ function isSmaller(a, b) {
 
 console.log(isSmaller(5, 'abc'));
 console.log(isSmaller(5, 5));
-console.log(isSmaller(5, -1));
+console.log(isSmaller(-5, -1));

@@ -59,6 +59,12 @@ getDecreaseNums(-5);
 
 console.log('------------- # 7');
 
+function getPow(x, n) {
+  return x ** n;
+}
+
+console.log(getPow(2, 5));
+
 // =====================================================
 
 console.log('------------- # 8');

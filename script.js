@@ -69,66 +69,30 @@ console.log(getPow(2, 5));
 
 console.log('------------- # 8');
 
-// вариант с проверкой
-
-// function isBigger(a, b) {
-//   if (Number.isInteger(a) && Number.isInteger(b)) {
-//     if (a === b) {
-//       console.log('Введите 2 разных числа');
-//     } else if (a > b) {
-//       console.log(true);
-//     } else {
-//       console.log(false);
-//     }
-//   } else {
-//     console.log('Вводить нужно только числа');
-//   }
-// }
-
-// isBigger(5, 'abc');
-// isBigger(5, 5);
-// isBigger(5, -1);
-
 function isBigger(a, b) {
-  if (a > b) {
-    console.log(true);
+  if (Number.isInteger(a) && Number.isInteger(b)) {
+    return a > b;
   } else {
-    console.log(false);
+    return 'Вводить нужно только числа';
   }
 }
 
-isBigger(5, -1);
+console.log(isBigger(5, 'abc'));
+console.log(isBigger(5, 5));
+console.log(isBigger(5, -1));
 
 // =====================================================
 
 console.log('------------- # 9');
 
-// вариант с проверкой
-
-// function isSmaller(a, b) {
-//   if (Number.isInteger(a) && Number.isInteger(b)) {
-//     if (a === b) {
-//       console.log('Введите 2 разных числа');
-//     } else if (a < b) {
-//       console.log(true);
-//     } else {
-//       console.log(false);
-//     }
-//   } else {
-//     console.log('Вводить нужно только числа');
-//   }
-// }
-
-// isSmaller(5, 'abc');
-// isSmaller(5, 5);
-// isSmaller(5, -1);
-
 function isSmaller(a, b) {
-  if (a < b) {
-    console.log(true);
+  if (Number.isInteger(a) && Number.isInteger(b)) {
+    return a < b;
   } else {
-    console.log(false);
+    return 'Вводить нужно только числа';
   }
 }
 
-isSmaller(5, -1);
+console.log(isSmaller(5, 'abc'));
+console.log(isSmaller(5, 5));
+console.log(isSmaller(5, -1));
